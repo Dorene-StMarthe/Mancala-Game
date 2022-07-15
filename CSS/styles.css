@@ -1,7 +1,68 @@
 li{
     text-decoration: none;
     display: inline;
-    padding: 60px;
-
-
+    padding: 20px;
+    float: center;
+    border-right: 1px solid rgb(4, 3, 3);
+    width: 100%;
+    cursor:auto;
 }
+
+ul{
+    background-color: #A17A60;
+    overflow: hidden;
+}
+.active {
+background-color: #DAEDE2;
+}
+
+.panel {
+    padding: 0 18px 0 30px;
+    background-color: #DAEDE2;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordionHowTo {
+    background-color: #DAEDE2;
+    color: #444;
+   
+    width: 100%;
+    text-align: left;
+    border: none;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+ .navbar ul{
+   float: left;
+   width: 33.33%;
+   text-align: center;
+ }
+
+.navbar{
+    overflow: auto;
+    width: 100%;
+}
+ 
+ @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

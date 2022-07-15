@@ -1,11 +1,12 @@
+/* navigation bar */
 li{
     text-decoration: none;
     display: inline;
     padding: 20px;
-    float: center;
+    float: left;
     border-right: 1px solid rgb(4, 3, 3);
-    width: 100%;
-    cursor:auto;
+    width: 33.33%;
+    cursor: pointer;
 }
 
 ul{
@@ -24,18 +25,13 @@ background-color: #DAEDE2;
   }
 
   .accordionHowTo {
-    background-color: #DAEDE2;
-    color: #444;
-   
-    width: 100%;
-    text-align: left;
-    border: none;
+    background-color: #A17A60;
     overflow: hidden;
     transition: 0.4s;
   }
  .navbar ul{
    float: left;
-   width: 33.33%;
+   width: 100%;
    text-align: center;
  }
 
@@ -65,4 +61,22 @@ background-color: #DAEDE2;
       display: block;
       text-align: left;
     }
+  }
+
+  body {
+    background-color: #F8F7F4;
+  }
+
+  .playerStats{
+    display: inline;
+  }
+  .playerPurple {
+    background-color: #5E17EB;
+    width: 50%;
+    float:left;
+  }
+  .playerRed {
+    background-color: #FF1616;
+    width: 50%;
+    float: left;
   }

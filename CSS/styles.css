@@ -13,12 +13,9 @@ ul{
     background-color: #A17A60;
     overflow: hidden;
 }
-.active {
-background-color: #DAEDE2;
-}
 
 .panel {
-    padding: 0 18px 0 30px;
+    padding: 0 18px;
     background-color: #DAEDE2;
     display: none;
     overflow: hidden;
@@ -29,17 +26,14 @@ background-color: #DAEDE2;
     overflow: hidden;
     transition: 0.4s;
   }
- .navbar ul{
-   float: left;
-   width: 100%;
-   text-align: center;
- }
-
-.navbar{
-    overflow: auto;
+  .navbar ul{
+    float: left;
     width: 100%;
-}
- 
+    text-align: center;
+    padding: 0;
+  }
+
+
  @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {

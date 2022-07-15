@@ -79,23 +79,68 @@ ul{
   
   
   .mancalaBoard {
-    display: flex;
-    width: 80%;
-    height: 450px;
-    background-color: #AD7A2E;
-    border-radius: 40px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+        display: flex;
+        width: 85%;
+        height: 425px;
+        background-color: #AD7A2E;
+        border-radius: 40px;
+        margin-left: auto;
+        margin-right: auto;
+      
   }
 
-  div {
+  div{
+        display: flex;
         width: 100px;
         height: 100px;
         background: #DBAA5F;
         border-radius: 50%;
-        overflow: hidden;
-      }
-        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
+  }
+        
+   figure{
+        width: 150px;
+        height: 300px;
+        border-radius: 100px / 100px;
+        position: absolute;
+   }
+
+   .purplePit{
+    display: flex;
+    flex-grow: 1;
+    background: purple;
+    float: right;
+   
+   }
+
+   .topHoles{
+    display:flex;
+    flex-direction: row;
+    padding: 80px 300px;
+    position: absolute;
+
+   }
+  
+   .bottomHoles{
+    display:flex;
+    flex-direction: row;
+    padding: 200px 300px;
+    position: absolute;
     
+   }
+
+   .purplePit{
+    display: flex;
+    flex-grow: 1;
+    background: purple;
+    float: right;
+   
+   }
+    .redPit {
+    float: left;
+    background: red;
+  
+}

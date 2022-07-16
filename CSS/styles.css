@@ -1,7 +1,11 @@
 /* navigation bar */
+body {
+    background-color: #F8F7F4;
+  }
 
 html, body {
     margin: 5px;
+
 }
 
 li{
@@ -25,7 +29,7 @@ ul{
 .fontMancala {
     font-family: 'Alex Brush', cursive;
     font-size: 26px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .panel {
     padding: 0 18px;
@@ -33,6 +37,7 @@ ul{
     display: none;
     overflow: hidden;
     color: black;
+    font-size: 20px;
   }
 
   .accordionHowTo {
@@ -57,7 +62,6 @@ ul{
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.icon {
@@ -72,27 +76,33 @@ ul{
     }
   }
 
-  body {
-    background-color: #F8F7F4;
-  }
-
+/* Player score bars*/
   .playerStats{
     display: inline;
+    padding: 0 10px 0px 0px;
   }
   .playerPurple {
     background-color: #5E17EB;
-    width: 50%;
-    float:left;
   }
   .playerRed {
     background-color: #FF1616;
+  }
+  .players {
+    height: 55px;
     width: 50%;
     float: left;
+    border-radius: 30px;
+    text-align:center;
+    padding: 10px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
   }
 
+
+
   /* Mancala board design*/
-  
-  
+
   .mancalaBoard {
         display: flex;
         width: 1200px;
@@ -102,6 +112,7 @@ ul{
         padding: 30px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: auto;
   }
         
    .centeredRows {
@@ -149,6 +160,19 @@ ul{
     }
   }
 
+.infobar {
+        width: 700px;
+        height: 80px;
+        background: #008037;
+        color: #DAEDE2;
+        position: absolute;
+        bottom: 100px;
+        padding: 20px;
+        text-align: center;
+        left: 400px;
+        border-radius: 30px;
+
+      }
 
    .footer {
     font-size: 11px;

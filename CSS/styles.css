@@ -85,58 +85,68 @@ ul{
   
   .mancalaBoard {
         display: flex;
-        width: 1300px;
-        height: 425px;
+        width: 1200px;
+        height: 400px;
         background-color: #AD7A2E;
         border-radius: 40px;
+        padding: 30px;
         margin-left: auto;
         margin-right: auto;
-      
   }
         
-   figure{
-    display: flex; 
-        width: 150px;
-        height: 300px;
-        border-radius: 100px / 100px;
-        position: absolute;
+   .centeredRows {
+    background-color:rgba(255, 255, 255, 0.069);
+    margin:3px;
    }
 
-   
-   
+   .pit{
+    display:flex;
+    flex-grow:1;
+   }
 
-    .redPit {
-        display:flex;
-        background: red;
-        flex-grow:1;
-    }
-
-        .purplePit{
-            display: flex;
-            flex-grow: 1;
-            background: purple;
-      
-    }
-
-   .topHoles{
+   .circles{
     display:flex;
     flex-direction: column;
-   flex-grow: 6;
+    flex-grow: 6;
 
    }
-  
+
    .gameRows {
    display:flex;
    flex-grow:1;
-   
-    
    }
 
-   .pot
+   .hole
    {
      position:relative;
      background-color:#DBAA5F;
      flex-grow:1;
      margin:5px;
-     border-radius:50px;
+     border-radius:50%;
    }
+
+
+   @media screen and (max-width: 600px) {
+    .mancalaBoard a:not(:first-child) {display: none;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mancalaBoard.responsive {position: relative;}
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+   .footer {
+    font-size: 11px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(101, 152, 139, 0.177);
+    color: rgb(99, 91, 91);
+    text-align: center;
+  }

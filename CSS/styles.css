@@ -17,13 +17,22 @@ li{
 ul{
     background-color: #A17A60;
     overflow: hidden;
+    color: #FFBD59;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
 }
 
+.fontMancala {
+    font-family: 'Alex Brush', cursive;
+    font-size: 26px;
+    font-weight: bolder;
+}
 .panel {
     padding: 0 18px;
     background-color: #DAEDE2;
     display: none;
     overflow: hidden;
+    color: black;
   }
 
   .accordionHowTo {
@@ -36,6 +45,7 @@ ul{
     width: 100%;
     text-align: center;
     padding: 0;
+   
   }
 
 

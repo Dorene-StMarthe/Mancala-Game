@@ -1,3 +1,4 @@
+//Accordian Panel in Navigation Bar
 let acc = document.getElementsByClassName("accordionHowTo");
 let i;
 
@@ -13,3 +14,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//

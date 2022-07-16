@@ -17,6 +17,10 @@ for (i = 0; i < acc.length; i++) {
 
 
 //game setup
+
+
+
+
 const holesAndPits = 14;
 let mancala = [holesAndPits];
 
@@ -31,5 +35,12 @@ let gameSetup = function() {
         mancala[i] = initialMarbles;
 }
         }};
+console.log(gameSetup)
 
-console.log(holesAndPits);
+const clickHole = document.querySelectorAll('.hole');
+clickHole.forEach((clickHole)=>{
+clickHole.addEventListener('click', () => {
+  alert("Hello World")
+});
+});
+

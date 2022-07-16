@@ -5,7 +5,6 @@ body {
 
 html, body {
     margin: 5px;
-
 }
 
 li{
@@ -31,6 +30,8 @@ ul{
     font-size: 26px;
     font-weight: bold;
 }
+
+/*dropdown accordian panel with How to Play*/
 .panel {
     padding: 0 18px;
     background-color: #DAEDE2;
@@ -38,6 +39,7 @@ ul{
     overflow: hidden;
     color: black;
     font-size: 20px;
+    text-align:left;
   }
 
   .accordionHowTo {
@@ -49,10 +51,8 @@ ul{
     float: left;
     width: 100%;
     text-align: center;
-    padding: 0;
-   
+    padding: 0;   
   }
-
 
  @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
@@ -78,28 +78,26 @@ ul{
 
 /* Player score bars*/
   .playerStats{
-    display: inline;
-    padding: 0 10px 0px 0px;
+        display: inline;
+        padding: 0 10px 0px 0px;
   }
   .playerPurple {
-    background-color: #5E17EB;
+        background-color: #5E17EB;
   }
   .playerRed {
-    background-color: #FF1616;
+        background-color: #FF1616;
   }
   .players {
-    height: 55px;
-    width: 50%;
-    float: left;
-    border-radius: 30px;
-    text-align:center;
-    padding: 10px;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+        height: 55px;
+        width: 50%;
+        float: left;
+        border-radius: 30px;
+        text-align:center;
+        padding: 10px;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 21px;
   }
-
-
 
   /* Mancala board design*/
 
@@ -116,36 +114,34 @@ ul{
   }
         
    .centeredRows {
-    background-color:rgba(255, 255, 255, 0.069);
-    margin:3px;
+        background-color:rgba(255, 255, 255, 0.069);
+        margin:3px;
    }
 
    .pit{
-    display:flex;
-    flex-grow:1;
+        display:flex;
+        flex-grow:1;
    }
 
    .circles{
-    display:flex;
-    flex-direction: column;
-    flex-grow: 6;
-
+        display:flex;
+        flex-direction: column;
+        flex-grow: 6;
    }
 
    .gameRows {
-   display:flex;
-   flex-grow:1;
+        display:flex;
+        flex-grow:1;
    }
 
    .hole
    {
-     position:relative;
-     background-color:#DBAA5F;
-     flex-grow:1;
-     margin:5px;
-     border-radius:50%;
+        position:relative;
+        background-color:#DBAA5F;
+        flex-grow:1;
+        margin:5px;
+        border-radius:50%;
    }
-
 
    @media screen and (max-width: 600px) {
     .mancalaBoard a:not(:first-child) {display: none;}
@@ -153,7 +149,7 @@ ul{
   
   @media screen and (max-width: 600px) {
     .mancalaBoard.responsive {position: relative;}
-    .navbar.responsive a {
+    .mancalaBoard.responsive a {
       float: none;
       display: block;
       text-align: left;
@@ -168,19 +164,20 @@ ul{
         position: absolute;
         bottom: 100px;
         padding: 20px;
-        text-align: center;
-        left: 400px;
         border-radius: 30px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 19px;
 
       }
 
    .footer {
-    font-size: 11px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(101, 152, 139, 0.177);
-    color: rgb(99, 91, 91);
-    text-align: center;
+        font-size: 11px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(101, 152, 139, 0.177);
+        color: rgb(99, 91, 91);
+        text-align: center;
   }

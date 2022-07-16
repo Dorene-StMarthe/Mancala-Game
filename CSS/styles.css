@@ -125,19 +125,17 @@ ul{
 
    }
   
-   .bottomHoles{
+   .gameRow {
    display:flex;
    flex-grow:1;
     
    }
 
-.hole{
-    position: relative;
-    flex-grow:1;
-    margin: 5px;
-    border-radius: 50px;
-    background: #DBAA5F;
-    
-   
-       
-}
+   .pot
+   {
+     position:relative;
+     background-color:#DBAA5F;
+     flex-grow:1;
+     margin:5px;
+     border-radius:50px;
+   }

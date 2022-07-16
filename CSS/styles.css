@@ -125,9 +125,10 @@ ul{
 
    }
   
-   .gameRow {
+   .gameRows {
    display:flex;
    flex-grow:1;
+   
     
    }
 

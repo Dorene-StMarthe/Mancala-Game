@@ -1,4 +1,9 @@
 /* navigation bar */
+
+html, body {
+    margin: 5px;
+}
+
 li{
     text-decoration: none;
     display: inline;
@@ -80,7 +85,7 @@ ul{
   
   .mancalaBoard {
         display: flex;
-        width: 85%;
+        width: 1300px;
         height: 425px;
         background-color: #AD7A2E;
         border-radius: 40px;
@@ -88,59 +93,51 @@ ul{
         margin-right: auto;
       
   }
-
-  div{
-        display: flex;
-        width: 100px;
-        height: 100px;
-        background: #DBAA5F;
-        border-radius: 50%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-  }
         
    figure{
+    display: flex; 
         width: 150px;
         height: 300px;
         border-radius: 100px / 100px;
         position: absolute;
    }
 
-   .purplePit{
-    display: flex;
-    flex-grow: 1;
-    background: purple;
-    float: right;
    
-   }
+   
+
+    .redPit {
+        display:flex;
+        background: red;
+        flex-grow:1;
+    }
+
+        .purplePit{
+            display: flex;
+            flex-grow: 1;
+            background: purple;
+      
+    }
 
    .topHoles{
     display:flex;
-    flex-direction: row;
-    padding: 80px 300px;
-    position: absolute;
+    flex-direction: column;
+   flex-grow: 6;
 
    }
   
    .bottomHoles{
-    display:flex;
-    flex-direction: row;
-    padding: 200px 300px;
-    position: absolute;
+   display:flex;
+   flex-grow:1;
     
    }
 
-   .purplePit{
-    display: flex;
-    flex-grow: 1;
-    background: purple;
-    float: right;
+.hole{
+    position: relative;
+    flex-grow:1;
+    margin: 5px;
+    border-radius: 50px;
+    background: #DBAA5F;
+    
    
-   }
-    .redPit {
-    float: left;
-    background: red;
-  
+       
 }

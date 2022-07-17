@@ -17,10 +17,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 //game setup
-
-
-
-
 const holesAndPits = 14;
 let mancala = [holesAndPits];
 
@@ -37,10 +33,49 @@ let gameSetup = function() {
         }};
 console.log(gameSetup)
 
+
+//Event Listeners
 const clickHole = document.querySelectorAll('.hole');
 clickHole.forEach((clickHole)=>{
-clickHole.addEventListener('click', () => {
-  alert("Hello World")
-});
+clickHole.addEventListener('click', (playerStart) 
+);
 });
 
+//playerstart: the hole where the player is drawing marbles
+
+let game = function(playerStart){
+    let i=0;
+    let numMarbles = mancala[playerStart];
+    let playAgain = false;
+    let pits = 0;
+
+//when the player takes out the marbles to play
+    mancala[playerStart] =0;
+
+//player increases marble count of holes while in play
+    for (i = playerStart+1; i<playerStart+1 + numMarbles; i++)
+    pits = i % holesAndPits;
+
+    mancala[pits] += 1;
+}
+
+
+function Player(color){
+    this.color = color
+}
+
+const redPlayer = new Player('red')
+const purplePlayer = new Player('purple')
+
+
+function gameOver(winningPlayer){
+    console.log("Congratulations!")
+    console.log(winningPlayer.name + " is the winner!")
+  }
+
+
+
+
+  
+
+  

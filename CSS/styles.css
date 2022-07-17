@@ -135,13 +135,16 @@ ul{
         flex-grow:1;
    }
 
-   .hole
-   {
+   .hole {
+        display: flex;
         position:relative;
         background-color:#DBAA5F;
         flex-grow:1;
         margin:5px;
         border-radius:50%;
+        justify-content: center;
+        align-items: center;
+
    }
 
    @media screen and (max-width: 600px) {
@@ -172,6 +175,12 @@ ul{
         transform: translate(30%, -15%);
         
       }
+.purple {
+    color: #5E17EB;
+}
+.red {
+    color: #FF1616;
+}
 
    .footer {
         font-size: 11px;

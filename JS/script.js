@@ -18,29 +18,68 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-//eventlisteners
-const clickHole = document.querySelectorAll('.hole');
-clickHole.forEach((clickHole)=>{
-clickHole.addEventListener('click', () => {
-  alert("Hello World");
-})});
+//eventlisteners and DOM
+const purplePlayer = document.getElementsByClassName('.hole1');
+const redPlayer = document.getElementsByClassName('.hole2');
 
-
-const clickNum = document.querySelectorAll('h1');
-clickNum.getElementsByTagName.addEventListener("click", function(){
-
+document.getElementsByClassName('.gameRows').addEventListener('click', function(){
+    gameStart();
 });
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //functions
-let boardSetUp = {
-marbles: 24,
-marbsPerHole: 4,
-pitsAndHoles: 14
+
+function gameSetup() {
+    gameHoles = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0];
+    player = "one";
+    winner = null;
+}
+
+
+function gameStart(e){
+    let begin = parseInt(e.target.id.replace('gameHoles', ''));
+    if (player === 'one' && begin > 5) return;
+    if (player === 'two' && (begin <= 6 || move === 13)) return;
+   
+    
 };
 
-boardSetUp.marbles;
+marbles= 24;
+marbsPerHole= 4;
+pitsAndHoles= 14;
+
+
+let mancala=[pitsAndHoles];
+let holesPerPlayer = 6;
+let playerMove = pitsAndHoles - 1;
+let initialPlay = 0;
+
+
+
+function gameStart(){
+ for ( let move = 0; move < marbsPerHole; move++){
+   if( move == holesPerPlayer || move == playerMove) {
+        mancala[move] = 0;
+   }
+    else {
+        mancala[move] = marbsPerHole;
+    }
+   }
+;}
 
 
 
@@ -75,68 +114,6 @@ boardSetUp.marbles;
 
 
 
-
-
-// //game setup
-// const holesAndPits = 14;
-// let mancala = [holesAndPits];
-
-// let initialMarbles = 4;
-
-// let gameSetup = function() {
-//     for (let i=0; i< holesAndPits; i++){
-//         if (i == redScorePit || i == purpleScorePit){
-//             mancala[i] = 0;
-//         }
-//     else{
-//         mancala[i] = initialMarbles;
-// }
-//         }};
-// console.log(gameSetup)
-
-
-// //Event Listeners
-// const clickHole = document.querySelectorAll('.hole');
-// const clickNum = document.querySelectorAll('h1')
-// clickHole.forEach((clickHole)=>{
-// clickHole.addEventListener('click', () => {
-//     return game
-    
-    
-// });
-// });
-
-// //playerstart: the hole where the player is drawing marbles
-
-// let game = function(playerStart){
-//     let i=0;
-//     let numMarbles = mancala[playerStart];
-//     let playAgain = false;
-//     let pits = 0;
-
-// //when the player takes out the marbles to play
-//     mancala[playerStart] =0;
-
-// //player increases marble count of holes while in play
-//     for (i = playerStart+1; i<playerStart+1 + numMarbles; i++)
-//     pits = i % holesAndPits;
-
-//     mancala[pits] += 1;
-// }
-
-
-// function Player(color){
-//     this.color = color
-// }
-
-// const redPlayer = new Player('red')
-// const purplePlayer = new Player('purple')
-
-
-// function gameOver(winningPlayer){
-//     console.log("Congratulations!")
-//     console.log(winningPlayer.name + " is the winner!")
-//   }
 
 
 

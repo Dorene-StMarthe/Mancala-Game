@@ -1,11 +1,9 @@
 /* navigation bar */
 body {
-    background-color: #F8F7F4;
+    background-color: #f9f0d5;
+    margin: 10px;
+   
   }
-
-html, body {
-    margin: 5px;
-}
 
 li{
     text-decoration: none;
@@ -116,10 +114,10 @@ ul{
         
    .centeredRows {
         background-color:rgba(255, 255, 255, 0.069);
-        margin:3px;
+        margin:2px;
    }
 
-   .pit{
+   .pit {
         display:flex;
         flex-grow:1;
    }
@@ -140,18 +138,13 @@ ul{
         position:relative;
         background-color:#DBAA5F;
         flex-grow:1;
-        margin:5px;
+        margin:7px;
         border-radius:50%;
         justify-content: center;
         align-items: center;
 
    }
-   .holes1{
-    color: purple;
-   }
-   .holes2{
-    color: red;
-   }
+ 
 
    @media screen and (max-width: 600px) {
     .mancalaBoard a:not(:first-child) {display: none;}
@@ -166,9 +159,10 @@ ul{
     }
   }
 
-.infobar {
+
+/*.infobar {
         width: 700px;
-        height: 60px;
+        height: 50px;
         background: #008037;
         color: #DAEDE2;
         position: absolute;
@@ -176,16 +170,25 @@ ul{
         border-radius: 30px;
         text-align: center;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 19px;
-        bottom: 10%;
-        transform: translate(30%, -15%);
-        
+        font-size: 17px;
+        margin: 20px;
+        transform: translate(30%, 30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 100px;
       }
+*/
+    
 .purple {
     color: #5E17EB;
+    
 }
 .red {
     color: #FF1616;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    
 }
 
    .footer {

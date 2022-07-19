@@ -135,7 +135,7 @@ ul{
         flex-grow:1;
    }
 
-    .hole1, .hole2 {
+    .holes1, .holes2 {
         display: flex;
         position:relative;
         background-color:#DBAA5F;
@@ -145,6 +145,12 @@ ul{
         justify-content: center;
         align-items: center;
 
+   }
+   .holes1{
+    color: purple;
+   }
+   .holes2{
+    color: red;
    }
 
    @media screen and (max-width: 600px) {

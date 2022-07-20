@@ -24,7 +24,7 @@ startGame.textContent = "Start Game"
 startGame.addEventListener("click", boardDisplay);
 
 let gameRound = document.querySelector('.holes1' ,'.holes2')
-gameRound.addEventListener("click", gameRound);
+gameRound.addEventListener("click", gamePlay);
 
 
 
@@ -69,12 +69,27 @@ function boardDisplay() {
 
 
 
+
+function gameWinner() {
+    if (holesArray[0] > holesArray[7])
+        return(
+      (document.querySelector("infobar").textContent = "Red is the Winner!")
+            );
+    if (holesArray[7] > holesArray[0])
+        return (
+      (document.querySelector("infobar").textContent = "Purple is the Winner!")
+            );         
+}
+
+
+
+
 turn =1;
 turn++;
 let idx = holesArray[idx];
 let startingIdx = 
 
-function gameRound() {
+function gamePlay() {
     let idx = holesArray[idx];
         if (holesArray[1,5])
         for (let i = 0; i = 4 || i === idx; i++){

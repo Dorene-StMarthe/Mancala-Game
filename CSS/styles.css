@@ -1,8 +1,7 @@
 /* navigation bar */
 body {
-    background-color: #f9f0d5;
+    background-color: #f7f0d9;
     margin: 10px;
-   
   }
 
 li{
@@ -180,17 +179,19 @@ ul{
       }
 */
     
-.purple {
-    color: #5E17EB;
-    
-}
-.red {
-    color: #FF1616;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    
+.purple , .end1 {
+    color: #5E17EB;  
 }
 
+.red , .end2, .purple, .end1{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 50px;
+     font-weight: bold;
+}
+.red, .end2 {
+  color: #FF1616;  
+
+}
    .footer {
         font-size: 11px;
         position: fixed;
